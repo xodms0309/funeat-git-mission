@@ -1,0 +1,14 @@
+name-template: 'v$RESOLVED_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+template: |
+  # What's Changed
+  $CHANGES
+  **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
+categories:
+  - title: ':열쇠: FE'
+    labels:
+      - ':열쇠: FE'
+  - title: ':자물쇠: BE'
+    labels:
+      - ':자물쇠: BE'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
